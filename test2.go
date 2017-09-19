@@ -32,7 +32,7 @@ func main(){
 	}
 
 	// Open a file
-	f, _ := os.Open("~/Documents/readme.txt")
+	f, _ := os.Open("poop.txt")
 
 	fmt.Println("file opened")
 
@@ -45,6 +45,6 @@ func main(){
 	// Finaly, copy the file over
 	// Usage: CopyFile(fileReader, remotePath, permission)
 
-	client.CopyFile(f, "/home/root", "0655")
-	fmt.Println("copy attempted")
+	client.CopyFile(f, "poop.txt", "0655")
+	fmt.Println("poop.txt copied")
 }
